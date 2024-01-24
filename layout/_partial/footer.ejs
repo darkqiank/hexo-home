@@ -5,8 +5,6 @@
     <% var startYear = (theme.copyright && theme.copyright.start_year) ? theme.copyright.start_year : new Date().getFullYear() %>
     <%= startYear >= endYear ? endYear : startYear + "-" + endYear %>
     <%= config.author || config.title %>
-    <a href="https://beian.miit.gov.cn/" class="hover:underline" target="_blank">浙ICP备2020036422号-1</a>
-    <a href="https://beian.mps.gov.cn/#/query/webSearch" class="hover:underline" target="_blank">33011002015082</a>
   </div>
   <div class="footer-right">
     <nav>
@@ -14,6 +12,11 @@
         <% for (var i in theme.nav) { %><!--
        --><li><a href="<%- url_for(theme.nav[i]) %>"><%= __('nav.'+i).replace("nav.", "") %></a></li><!--
      --><% } %>
+      </ul>
+      <ul>
+        <a href="https://beian.miit.gov.cn/" class="hover:underline" target="_blank">浙ICP备2020036422号-1</a>
+        <img src="https://cdn.jsdelivr.net/gh/darkqiank/img_bed@master/catflix_img/beian.png">
+        <a href="https://beian.mps.gov.cn/#/query/webSearch" class="hover:underline" target="_blank">33011002015082</a>
       </ul>
     </nav>
   </div>

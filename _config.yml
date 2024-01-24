@@ -30,12 +30,12 @@ social_links:
   -
     icon: github
     link: http://github.com/darkqiank
-  -
-    icon: twitter
-    link: /
-  -
-    icon: facebook
-    link: /
+  # -
+  #   icon: twitter
+  #   link: /
+  # -
+  #   icon: facebook
+  #   link: /
   -
     icon: mail
     link: mailto:darkqiank@foxmail.com
